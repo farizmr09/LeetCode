@@ -4,5 +4,4 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         for i in range(0, k):
-            holder = nums.pop()
-            nums.insert(0, holder)
+            nums.insert(0, nums.pop())
