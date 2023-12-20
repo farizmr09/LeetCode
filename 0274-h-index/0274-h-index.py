@@ -4,4 +4,6 @@ class Solution:
         for i in range(max(citations) + 1):
             if len(list(filter(lambda x: x >= i, citations))) > h:
                 h = i
+            else:
+                break
         return h
