@@ -4,11 +4,7 @@ class Solution:
         holder = []
         def roman(num):
             for el in reversed(dict):
-                if num == el:
-                    holder.append(dict[el])
-                    num = 0
-                    break
-                if num > el:
+                if num >= el:
                     holder.append(int(num/el) * dict[el])
                     num = num - el * int(num/el)
                     print(num, el)
