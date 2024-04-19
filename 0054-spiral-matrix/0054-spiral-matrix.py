@@ -3,7 +3,6 @@ class Solution:
         spiral = []
         try:
             while len(matrix):
-                # print(spiral, matrix)
                 for i in matrix[0]:
                     spiral.append(i)
                 matrix.remove(matrix[0])
