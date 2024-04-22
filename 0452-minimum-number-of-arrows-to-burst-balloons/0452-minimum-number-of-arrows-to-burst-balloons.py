@@ -10,9 +10,7 @@ class Solution:
                 x = points[i][0]
                 y = points[i][1]
                 counter += 1
-            if points[i][1] < y:
-                y = points[i][1]
-            if points[i][0] > x:
-                x = points[i][0]
+            y = min(points[i][1], y)
+            x = max(points[i][0], x)
             i += 1
         return(counter)
