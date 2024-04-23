@@ -5,10 +5,9 @@ class Solution:
         for i in range(len(l)):
             if l[i] == '' or l[i] == ".":
                 continue
-            if l[i] == ".." and len(stack) == 0:
-                continue
             if l[i] == "..":
-                stack.pop()
+                if stack:
+                    stack.pop()
                 continue
             stack.append(l[i])
 
