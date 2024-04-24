@@ -32,9 +32,7 @@ class Solution:
                 else:
                     res.val = total
                     carry = 0
-                
-                print(res.val, carry, total)
-            
+                            
             if carry != 0:
                 res.next = ListNode(1)
             
