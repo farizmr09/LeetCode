@@ -16,8 +16,7 @@ class Solution:
         
         curr = head
         while curr:
-            copy = Node(curr.val)
-            n_map[curr] = copy
+            n_map[curr] = Node(curr.val)
             curr = curr.next
 
         curr = head
