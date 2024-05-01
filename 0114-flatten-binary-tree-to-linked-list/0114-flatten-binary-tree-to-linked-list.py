@@ -15,9 +15,9 @@ class Solution:
         while queue:
             curr = queue.pop(0)
             root.val = curr.val
-            if curr.right is not None:
+            if curr.right:
                 queue.insert(0, curr.right) 
-            if curr.left is not None:
+            if curr.left:
                 queue.insert(0, curr.left)
             if not queue:
                 continue
